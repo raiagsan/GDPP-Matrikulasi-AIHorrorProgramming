@@ -1,6 +1,3 @@
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +9,7 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] protected bool _isLocked;
     [SerializeField] protected string _keyID;
 
+    protected Coroutine _animatingDoorCoroutine;
     protected bool _isAnimating;
     protected bool _isOpen;
     public string Name => _name;
