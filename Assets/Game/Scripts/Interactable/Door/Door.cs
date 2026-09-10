@@ -1,13 +1,46 @@
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _name;
+    [SerializeField] protected Transform _doorTransform;
+    [SerializeField] protected float _duration = 1f;
+    [SerializeField] protected bool _isLocked;
+    [SerializeField] protected string _keyID;
 
+    protected bool _isAnimating;
+    protected bool _isOpen;
     public string Name => _name;
+    public bool IsAnimating => _isAnimating;
+
+    public UnityEvent OnDoorOpen;
+    public UnityEvent OnDoorClose;
 
     public void Interact()
     {
-        
+        if (_isOpen == true)
+        {
+            Close();
+        }
+        else
+        {
+            Open();
+        }
+    }
+
+    public virtual void Close()
+    {
+        _isOpen = false;
+        OnDoorClose?.Invoke();
+    }
+
+    public virtual void Open()
+    {
+        _isOpen = true;
+        OnDoorOpen?.Invoke();
     }
 }
