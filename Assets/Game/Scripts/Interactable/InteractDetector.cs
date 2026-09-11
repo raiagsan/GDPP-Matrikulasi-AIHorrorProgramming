@@ -10,6 +10,11 @@ public class InteractDetector : MonoBehaviour
     private IInteractable _detectedInteractable;
     private bool _isInteracting;
 
+    private void Update() 
+    {
+        UpdateDetection();
+    }
+
     private void UpdateDetection()
     {
         if (_isInteracting)
