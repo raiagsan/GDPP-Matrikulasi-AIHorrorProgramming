@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Item : MonoBehaviour, IInteractable, IPicakble
 {
@@ -6,6 +7,9 @@ public class Item : MonoBehaviour, IInteractable, IPicakble
 
     public string Name => _itemData.Name;
 
+    public UnityEvent OnItemPicked;
+
+    [ContextMenu("Interact Item")]
     public void Interact()
     {
         Pickup();
@@ -13,7 +17,8 @@ public class Item : MonoBehaviour, IInteractable, IPicakble
 
     public void Pickup()
     {
-        
+        OnItemPicked?.Invoke();
+        Destroy(gameObject);
     }
     
 }
