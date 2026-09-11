@@ -1375,6 +1375,117 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1482411885
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.051628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.031591654
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.792932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779411201265450251, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046327783675901781, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056366692752996453, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_Name
+      value: Battery
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056366692752996453, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496340431982706460, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8056366692752996453, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1482411887}
+  m_SourcePrefab: {fileID: 100100000, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+--- !u!1 &1482411886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8056366692752996453, guid: c492ba341be7f3146967a09a78fab025, type: 3}
+  m_PrefabInstance: {fileID: 1482411885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1482411887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482411886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c902a0876b1b946a39a4dbf069fe4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemData:
+    ID: BATTERY_001
+    Name: Battery
+  OnItemPicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1562618083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1540,7 +1651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1205541553236856, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1949671195395142, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
       propertyPath: m_Name
@@ -1593,6 +1704,18 @@ PrefabInstance:
     - target: {fileID: 4227889827151656, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82697407254320668, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82697407254320668, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82697407254320668, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114410976665799846, guid: 4f24f31aeb1fb6748b7c42d3b9f46c59, type: 3}
@@ -2005,6 +2128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _owner: {fileID: 2146250947}
   _light: {fileID: 419180268}
+  _initialBatteryLevel: 100
+  _batteryDrainRate: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2022,3 +2147,4 @@ SceneRoots:
   - {fileID: 1278690647}
   - {fileID: 195641202}
   - {fileID: 1449251088}
+  - {fileID: 1482411885}
