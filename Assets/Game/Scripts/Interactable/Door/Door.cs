@@ -18,6 +18,7 @@ public class Door : MonoBehaviour, IInteractable
     public UnityEvent OnDoorOpen;
     public UnityEvent OnDoorClose;
 
+    [ContextMenu("Interact Door")]
     public void Interact()
     {
         if (_isOpen == true)

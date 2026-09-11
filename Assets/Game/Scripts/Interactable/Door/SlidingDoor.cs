@@ -1,10 +1,11 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SlidingDoor : Door
 {
     [SerializeField] private Vector3 _openPosition;
-    [SerializeField] private Vector4 _closedPosition;
+    [SerializeField] private Vector3 _closedPosition;
 
     public override void Open()
     {
