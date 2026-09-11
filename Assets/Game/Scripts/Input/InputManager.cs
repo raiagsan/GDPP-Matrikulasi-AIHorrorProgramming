@@ -21,7 +21,10 @@ public class InputManager : MonoBehaviour, IPlayerActions
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        OnInteractInput?.Invoke();
+        if (context.performed)
+        {
+            OnInteractInput?.Invoke();
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
