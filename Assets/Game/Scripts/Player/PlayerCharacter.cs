@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
@@ -12,7 +13,9 @@ public class PlayerCharacter : MonoBehaviour
     public PlayerCharacterStamina Stamina => _stamina;
     public InventoryManager Inventory => _inventory;
     public InteractDetector InteractDetector => _interactDetector;
-    public CameraManager CameraManager => _camera;
+    public CameraManager Camera => _camera;
+
+    public bool IsHiding {get; private set;}
 
     private void Awake() 
     {
@@ -20,4 +23,8 @@ public class PlayerCharacter : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void SetIsHiding(bool isHiding)
+    {
+        IsHiding = isHiding;
+    }
 }

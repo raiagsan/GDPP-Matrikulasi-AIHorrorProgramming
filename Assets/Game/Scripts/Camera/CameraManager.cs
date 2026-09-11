@@ -13,6 +13,12 @@ public class CameraManager : MonoBehaviour
         _cameraInput.enabled = isActive;
     }
 
+    public void ResetCameraRotation()
+    {
+        _panTilt.PanAxis.Value = 0f;
+        _panTilt.TiltAxis.Value = 0f;
+    }
+
     public void SetPanAxisValue(float panValue)
     {
         _panTilt.PanAxis.Value = panValue;
