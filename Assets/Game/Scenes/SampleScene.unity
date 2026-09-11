@@ -1326,8 +1326,8 @@ MonoBehaviour:
   _name: Master Bedroom
   _doorTransform: {fileID: 1841399218}
   _duration: 1
-  _isLocked: 0
-  _keyID: 
+  _isLocked: 1
+  _keyID: KEY_001
   OnDoorOpen:
     m_PersistentCalls:
       m_Calls: []
