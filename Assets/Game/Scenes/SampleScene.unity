@@ -1370,6 +1370,8 @@ GameObject:
   - component: {fileID: 2146250943}
   - component: {fileID: 2146250944}
   - component: {fileID: 2146250945}
+  - component: {fileID: 2146250946}
+  - component: {fileID: 2146250947}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1452,6 +1454,33 @@ MonoBehaviour:
   _maxStamina: 100
   _sprintStaminaCost: 20
   _staminaRegen: 20
+--- !u!114 &2146250946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146250941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be6234bde3594241a7186113ab91461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2146250947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146250941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10d243bf79242146a34866810eff362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 2146250944}
+  _stamina: {fileID: 2146250945}
+  _inventory: {fileID: 2146250946}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
